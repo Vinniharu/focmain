@@ -133,7 +133,7 @@ export default function HomeHero() {
             >
               <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm rounded-full py-1.5 px-4 border border-white/10">
                 <Calendar className="text-[#FF6B00]" size={18} />
-                <span>June 12-14, 2025</span>
+                <span>June 12, 2025</span>
               </div>
               
               <div className="flex items-center gap-2 bg-white/5 backdrop-blur-sm rounded-full py-1.5 px-4 border border-white/10">

@@ -17,8 +17,8 @@ export default function RegistrationInfo() {
     },
     {
       icon: <MapPin className="w-5 h-5 text-[#FF6B00]" />,
-      title: "Landmark Event Center",
-      description: "Lagos, Nigeria",
+      title: "Unilag",
+      description: "Lagos State",
     },
     {
       icon: <Users className="w-5 h-5 text-[#2E8B57]" />,

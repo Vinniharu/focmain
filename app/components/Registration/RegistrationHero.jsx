@@ -141,7 +141,7 @@ export default function RegistrationHero() {
           
           <div className="flex items-center gap-2 bg-white/5 backdrop-blur-md px-5 py-3 rounded-full border border-[#FF6B00]/20">
             <MapPin className="text-[#2E8B57] h-5 w-5" />
-            <span className="text-white font-medium">Landmark Event Center, Lagos</span>
+            <span className="text-white font-medium">Unilag, Lagos State</span>
           </div>
         </motion.div>
         

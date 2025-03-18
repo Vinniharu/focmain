@@ -150,7 +150,7 @@ export default function ReadyToJoin() {
                   <Calendar size={18} />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-800">June 12-15, 2025</h3>
+                  <h3 className="font-semibold text-gray-800">June 12, 2025</h3>
                   <p className="text-gray-500 text-sm">Mark your calendars for the event of the year</p>
                 </div>
               </div>

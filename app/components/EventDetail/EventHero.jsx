@@ -176,8 +176,8 @@ export default function EventHero() {
                 <MapPin className="w-6 h-6 text-[#2E8B57]" />
               </div>
               <h3 className="text-white font-semibold mb-1">Location</h3>
-              <p className="text-gray-300">Landmark Event Center</p>
-              <p className="text-gray-400 text-sm">Victoria Island, Lagos, Nigeria</p>
+              <p className="text-gray-300">Unilag</p>
+              <p className="text-gray-400 text-sm">Lagos State</p>
             </div>
           </motion.div>
           

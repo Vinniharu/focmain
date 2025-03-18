@@ -7,38 +7,22 @@ import { HelpCircle } from "lucide-react";
 export default function SponsorshipFAQSection() {
   const [activeIndex, setActiveIndex] = useState(null);
   
-  const faqs = [
+  const faqs =  [
     {
-      question: "How many attendees are expected at FOC'25?",
-      answer: "Based on previous years and current registration trends, we expect 2,500-3,000 attendees including educators, technology leaders, policymakers, students, and industry professionals from over 50 countries."
+      question: "What is the expected attendance?",
+      answer: "We anticipate over 1,000 attendees from across Nigeria and neighboring countries, including educators, technology professionals, policymakers, investors, and students."
     },
     {
-      question: "What is the deadline to become a sponsor?",
-      answer: "For full benefits, including print materials, sponsors should commit by April 30, 2025. For digital-only benefits, we can accommodate sponsors until June 15, 2025, subject to availability."
+      question: "When is the sponsorship deadline?",
+      answer: "To ensure maximum exposure, we recommend confirming sponsorship by March 31, 2025. However, we may accept sponsors after this date based on availability."
     },
     {
-      question: "Can sponsorship packages be customized?",
-      answer: "Yes, we're happy to tailor sponsorship packages to meet your specific marketing objectives and budget. Please contact our sponsorship team to discuss custom options that align with your goals."
+      question: "Can we customize a sponsorship package?",
+      answer: "Yes! We're happy to work with you to create a custom package that meets your specific marketing objectives and budget. Contact our sponsorship team to discuss options."
     },
     {
-      question: "When can sponsors set up their exhibition booths?",
-      answer: "Booth setup is available from 1:00 PM to 8:00 PM on July 14, 2025, and from 7:00 AM to 9:00 AM on July 15, 2025. All booths must be ready before the exhibition hall opens at 10:00 AM on July 15."
-    },
-    {
-      question: "Will sponsors receive attendee information?",
-      answer: "Sponsors at Diamond, Platinum, and Gold levels receive attendee data (with consent) according to data protection regulations. This includes name, organization, job title, and email for attendees who opt to share their information."
-    },
-    {
-      question: "What marketing materials will sponsors need to provide?",
-      answer: "Sponsors should submit their logo (vector format), company description (50-200 words), website URL, and social media handles. Diamond and Platinum sponsors will need additional materials for advertisements and promotional content."
-    },
-    {
-      question: "How are speaking opportunities allocated?",
-      answer: "Speaking slots are assigned based on sponsorship level. Diamond sponsors receive keynote opportunities, while Platinum and Gold sponsors are offered panel or workshop sessions. Content must be educational rather than promotional and requires approval from the program committee."
-    },
-    {
-      question: "What technical support is available for sponsors?",
-      answer: "All sponsors have access to our technical support team before and during the event. We provide standard power connections, WiFi, and basic AV equipment. Special requirements can be accommodated with advance notice, potentially at additional cost."
+      question: "What is the booth setup and teardown schedule?",
+      answer: "Setup will be available the day before the event (June 11) from 2:00 PM to 8:00 PM, and on the morning of the event from 6:00 AM to 8:00 AM. Teardown must be completed by 8:00 PM on June 12."
     }
   ];
 
