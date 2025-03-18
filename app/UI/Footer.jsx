@@ -7,29 +7,31 @@ import {
   Phone,
   Mail,
   MapPin,
+  ArrowRight,
+  ChevronRight
 } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Footer() {
   const socialLinks = [
     {
-      icon: <Facebook />,
+      icon: <Facebook size={20} />,
       link: "https://www.facebook.com/festivalofchange",
     },
     {
-      icon: <Twitter />,
+      icon: <Twitter size={20} />,
       link: "https://www.twitter.com/festivalofchange",
     },
     {
-      icon: <Instagram />,
+      icon: <Instagram size={20} />,
       link: "https://www.instagram.com/festivalofchange",
     },
     {
       icon: (
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
+          width="20"
+          height="20"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -71,16 +73,16 @@ export default function Footer() {
   ];
 
   const contactUs = [
+    // {
+    //   icon: <MapPin size={18} />,
+    //   text: "11 Admiralty Lake Drive, Ikoyi, Lagos, Nigeria",
+    // },
     {
-      icon: <MapPin />,
-      text: "11 Admiralty Lake Drive, Ikoyi, Lagos, Nigeria",
-    },
-    {
-      icon: <Phone />,
+      icon: <Phone size={18} />,
       text: "+234 800 123 4567",
     },
     {
-      icon: <Mail />,
+      icon: <Mail size={18} />,
       text: "info@festivalofchange.org",
     },
   ];
@@ -101,7 +103,12 @@ export default function Footer() {
     visible: { 
       opacity: 1, 
       y: 0,
-      transition: { duration: 0.5 }
+      transition: { 
+        type: "spring",
+        stiffness: 50,
+        damping: 10,
+        duration: 0.5 
+      }
     }
   };
 
@@ -116,160 +123,301 @@ export default function Footer() {
 
   return (
     <motion.div 
-      className="bg-[#333333] w-full text-white py-14"
+      className="relative bg-gradient-to-b from-gray-900 to-black w-full text-white overflow-hidden"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 0.7 }}
     >
-      <motion.div 
-        className="max-w-7xl mx-4 lg:m-auto border-b border-[#374151] pb-14"
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-      >
-        <motion.section 
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+      {/* Decorative elements */}
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
+        <motion.div 
+          className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full bg-[#2E8B57]/10 blur-[100px]"
+          animate={{
+            scale: [1, 1.1, 1],
+            opacity: [0.2, 0.3, 0.2],
+          }}
+          transition={{
+            duration: 8,
+            repeat: Infinity,
+            repeatType: "reverse",
+          }}
+        />
+        <motion.div 
+          className="absolute bottom-0 left-0 w-[300px] h-[300px] rounded-full bg-[#FF6B00]/10 blur-[100px]"
+          animate={{
+            scale: [1, 1.15, 1],
+            opacity: [0.15, 0.25, 0.15],
+          }}
+          transition={{
+            duration: 10,
+            repeat: Infinity,
+            repeatType: "reverse",
+            delay: 1,
+          }}
+        />
+        
+        {/* Grid pattern */}
+        <div className="absolute inset-0 opacity-[0.03]" 
+          style={{ 
+            backgroundImage: `
+              linear-gradient(to right, rgba(255,255,255,0.1) 1px, transparent 1px),
+              linear-gradient(to bottom, rgba(255,255,255,0.1) 1px, transparent 1px)
+            `,
+            backgroundSize: '40px 40px'
+          }}
+        ></div>
+      </div>
+      
+      {/* Footer content */}
+      <div className="relative z-10 pt-20 pb-10">
+        <motion.div 
+          className="max-w-7xl mx-auto px-6 lg:px-8"
           variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
         >
+          {/* Top section with logo and description */}
           <motion.div 
-            className="flex flex-col gap-4"
+            className="flex flex-col items-center text-center mb-12"
             variants={itemVariants}
           >
             <motion.h1 
-              className="text-lg font-bold"
+              className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#2E8B57] via-white to-[#FF6B00] mb-4"
               variants={itemVariants}
             >
               Festival Of Change
             </motion.h1>
+            <motion.div 
+              className="h-1 w-20 bg-gradient-to-r from-[#2E8B57] to-[#FF6B00] rounded-full mb-4"
+              initial={{ width: 0 }}
+              whileInView={{ width: 80 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+            />
             <motion.p 
-              className="text-sm text-[#D1D5DB]"
+              className="text-white/70 max-w-xl mx-auto text-base"
               variants={itemVariants}
             >
-              Connecting Education and Technology at All Levels
+              Pioneering the future of education through technological innovation and collaborative partnerships across all levels of learning.
             </motion.p>
-            <motion.section 
-              className="flex gap-4"
-              variants={containerVariants}
-            >
-              {socialLinks.map((link, index) => (
-                <motion.a
-                  href={link.link}
-                  key={index}
-                  className="text-white hover:text-[#FF6B00] text-sm"
-                  variants={socialVariants}
-                  whileHover={{ scale: 1.2, color: "#FF6B00" }}
-                  whileTap={{ scale: 0.9 }}
-                >
-                  {link.icon}
-                </motion.a>
-              ))}
-            </motion.section>
           </motion.div>
-          <motion.div 
-            className="flex flex-col gap-4"
-            variants={itemVariants}
+          
+          <motion.div
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8"
+            variants={containerVariants}
           >
-            <motion.h1 
-              className="text-lg font-bold"
+            {/* Column 1: About */}
+            <motion.div 
+              className="flex flex-col"
               variants={itemVariants}
             >
-              Quick Links
-            </motion.h1>
-            <motion.section 
-              className="flex flex-col gap-2"
-              variants={containerVariants}
-            >
-              {quickLinks.map((link, index) => (
-                <motion.a
-                  href={link.link}
-                  key={index}
-                  className="text-sm text-[#D1D5DB] hover:text-[#FF6B00]"
-                  variants={itemVariants}
-                  whileHover={{ x: 5, color: "#FF6B00" }}
-                >
-                  <motion.p className="text-sm text-[#D1D5DB]">{link.text}</motion.p>   
-                </motion.a>
-              ))}
-            </motion.section>
-          </motion.div>
-          <motion.div 
-            className="flex flex-col gap-4"
-            variants={itemVariants}
-          >
-            <motion.h1 
-              className="text-lg font-bold"
-              variants={itemVariants}
-            >
-              Contact Us
-            </motion.h1>
-            <motion.section 
-              className="flex flex-col gap-4"
-              variants={containerVariants}
-            >
-              {contactUs.map((link, index) => (
-                <motion.a
-                  href={link.link}
-                  key={index}
-                  className="text-sm text-[#D1D5DB] hover:text-[#FF6B00] flex gap-2 items-center"
-                  variants={itemVariants}
-                  whileHover={{ x: 5, color: "#FF6B00" }}
-                >
-                  <motion.p 
-                    className="text-sm text-[#FF6B00]"
-                    whileHover={{ rotate: 15, scale: 1.1 }}
+              <motion.h2 
+                className="text-xl font-semibold mb-5 relative inline-block"
+                variants={itemVariants}
+              >
+                About Us
+                <div className="absolute -bottom-2 left-0 h-0.5 w-12 bg-gradient-to-r from-[#2E8B57] to-[#FF6B00] rounded-full"></div>
+              </motion.h2>
+              <motion.p 
+                className="text-white/60 text-sm leading-relaxed mb-6"
+                variants={itemVariants}
+              >
+                Connecting Education and Technology at All Levels. The festival brings together educators, technologists, and industry leaders to drive innovation in education.
+              </motion.p>
+              <motion.div 
+                className="flex gap-4 mt-2"
+                variants={containerVariants}
+              >
+                {socialLinks.map((link, index) => (
+                  <motion.a
+                    href={link.link}
+                    key={index}
+                    className="w-9 h-9 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 flex items-center justify-center hover:bg-gradient-to-r from-[#2E8B57]/20 to-[#FF6B00]/20 hover:border-white/30 transition-all duration-300"
+                    variants={socialVariants}
+                    whileHover={{ 
+                      scale: 1.1, 
+                      color: "#FF6B00",
+                      boxShadow: "0 0 20px rgba(255, 107, 0, 0.3)"
+                    }}
+                    whileTap={{ scale: 0.9 }}
+                    target="_blank" 
+                    rel="noopener noreferrer"
                   >
                     {link.icon}
-                  </motion.p>
-                  <motion.p className="text-sm text-[#D1D5DB]">{link.text}</motion.p>
-                </motion.a>
-              ))}
-            </motion.section>
+                  </motion.a>
+                ))}
+              </motion.div>
+            </motion.div>
+            
+            {/* Column 2: Quick Links */}
+            <motion.div 
+              className="flex flex-col"
+              variants={itemVariants}
+            >
+              <motion.h2 
+                className="text-xl font-semibold mb-5 relative inline-block"
+                variants={itemVariants}
+              >
+                Quick Links
+                <div className="absolute -bottom-2 left-0 h-0.5 w-12 bg-gradient-to-r from-[#2E8B57] to-[#FF6B00] rounded-full"></div>
+              </motion.h2>
+              <motion.ul
+                className="space-y-3"
+                variants={containerVariants}
+              >
+                {quickLinks.map((link, index) => (
+                  <motion.li
+                    key={index}
+                    variants={itemVariants}
+                  >
+                    <motion.a
+                      href={link.link}
+                      className="text-white/60 hover:text-white flex items-center group transition-colors duration-300"
+                      whileHover={{ x: 5 }}
+                    >
+                      <ChevronRight size={16} className="mr-2 text-[#FF6B00] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      {link.text}
+                    </motion.a>
+                  </motion.li>
+                ))}
+              </motion.ul>
+            </motion.div>
+            
+            {/* Column 3: Contact */}
+            <motion.div 
+              className="flex flex-col"
+              variants={itemVariants}
+            >
+              <motion.h2 
+                className="text-xl font-semibold mb-5 relative inline-block"
+                variants={itemVariants}
+              >
+                Contact Us
+                <div className="absolute -bottom-2 left-0 h-0.5 w-12 bg-gradient-to-r from-[#2E8B57] to-[#FF6B00] rounded-full"></div>
+              </motion.h2>
+              <motion.ul
+                className="space-y-4"
+                variants={containerVariants}
+              >
+                {contactUs.map((contact, index) => (
+                  <motion.li
+                    key={index}
+                    className="flex items-start group"
+                    variants={itemVariants}
+                  >
+                    <div className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center mr-3 group-hover:bg-gradient-to-r from-[#2E8B57]/30 to-[#FF6B00]/30 group-hover:border-white/30 transition-all duration-300">
+                      <motion.span
+                        className="text-[#FF6B00]"
+                        whileHover={{ rotate: 15, scale: 1.1 }}
+                      >
+                        {contact.icon}
+                      </motion.span>
+                    </div>
+                    <span className="text-white/60 text-sm">{contact.text}</span>
+                  </motion.li>
+                ))}
+              </motion.ul>
+            </motion.div>
+            
+            {/* Column 4: Newsletter */}
+            <motion.div 
+              className="flex flex-col"
+              variants={itemVariants}
+            >
+              <motion.h2 
+                className="text-xl font-semibold mb-5 relative inline-block"
+                variants={itemVariants}
+              >
+                Newsletter
+                <div className="absolute -bottom-2 left-0 h-0.5 w-12 bg-gradient-to-r from-[#2E8B57] to-[#FF6B00] rounded-full"></div>
+              </motion.h2>
+              <motion.p 
+                className="text-white/60 text-sm mb-5"
+                variants={itemVariants}
+              >
+                Subscribe to receive updates about upcoming events, speakers, and educational insights.
+              </motion.p>
+              
+              <motion.div
+                className="relative"
+                variants={itemVariants}
+              >
+                <motion.input 
+                  type="email" 
+                  placeholder="Enter your email" 
+                  className="w-full bg-white/5 backdrop-blur-sm border border-white/10 rounded-full py-3 px-5 text-white placeholder:text-white/40 focus:outline-none focus:border-[#FF6B00]/50 focus:ring-1 focus:ring-[#FF6B00]/50 transition-all duration-300"
+                  whileFocus={{ scale: 1.01 }}
+                />
+                <motion.button
+                  className="absolute right-1 top-1 bottom-1 bg-gradient-to-r from-[#2E8B57] to-[#FF6B00] rounded-full w-10 flex items-center justify-center"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <ArrowRight size={16} />
+                </motion.button>
+              </motion.div>
+              
+              <motion.p 
+                className="text-white/40 text-xs mt-3"
+                variants={itemVariants}
+              >
+                We respect your privacy. Unsubscribe at any time.
+              </motion.p>
+            </motion.div>
           </motion.div>
+          
+          {/* Divider */}
           <motion.div 
-            className="flex flex-col gap-4"
-            variants={itemVariants}
+            className="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent my-10"
+            initial={{ width: 0 }}
+            whileInView={{ width: "100%" }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.5 }}
+          />
+          
+          {/* Bottom section */}
+          <motion.div 
+            className="flex flex-col md:flex-row justify-between items-center gap-4"
+            variants={containerVariants}
           >
-            <motion.h1 
-              className="text-lg font-bold"
-              variants={itemVariants}
-            >
-              Subscribe
-            </motion.h1>
             <motion.p 
-              className="text-sm text-[#D1D5DB]"
+              className="text-white/40 text-sm"
               variants={itemVariants}
             >
-              Stay updated with the latest news and announcements.
+              &copy; {new Date().getFullYear()} Festival Of Change. All rights reserved.
             </motion.p>
-            <motion.input
-              type="email"
-              placeholder="Enter your email"
-              className="w-full py-2 px-4 rounded-md bg-[#374151] placeholder:text-[#CCCCCC]"
+            
+            <motion.div 
+              className="flex gap-6 text-sm text-white/40"
               variants={itemVariants}
-              whileFocus={{ scale: 1.02, boxShadow: "0 0 8px rgba(255,107,0,0.5)" }}
-            />
-            <motion.button 
-              className="bg-[#FF6B00] text-white px-4 py-2 rounded-md"
-              variants={itemVariants}
-              whileHover={{ scale: 1.05, backgroundColor: "#D84315" }}
-              whileTap={{ scale: 0.95 }}
             >
-              Subscribe
-            </motion.button>
+              <motion.a 
+                href="/privacy" 
+                className="hover:text-white transition-colors"
+                whileHover={{ color: "#FF6B00" }}
+              >
+                Privacy Policy
+              </motion.a>
+              <motion.a 
+                href="/terms" 
+                className="hover:text-white transition-colors"
+                whileHover={{ color: "#FF6B00" }}
+              >
+                Terms of Service
+              </motion.a>
+              <motion.a 
+                href="/cookie-policy" 
+                className="hover:text-white transition-colors"
+                whileHover={{ color: "#FF6B00" }}
+              >
+                Cookie Policy
+              </motion.a>
+            </motion.div>
           </motion.div>
-        </motion.section>
-      </motion.div>
-      <motion.p 
-        className="text-sm text-[#D1D5DB] text-start mt-8 max-w-7xl mx-4 lg:m-auto"
-        initial={{ opacity: 0, y: 10 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5, delay: 0.8 }}
-      >
-        &copy; {new Date().getFullYear()} Festival Of Change. All rights reserved.
-      </motion.p>
+        </motion.div>
+      </div>
     </motion.div>
   );
 }
