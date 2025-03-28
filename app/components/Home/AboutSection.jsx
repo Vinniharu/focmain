@@ -313,15 +313,6 @@ export default function AboutSection() {
                       {item.description}
                     </p>
                     
-                    <motion.div 
-                      className="flex items-center mt-2 text-[#2E8B57] opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                      initial={{ x: -10 }}
-                      whileInView={{ x: 0 }}
-                      viewport={{ once: true }}
-                    >
-                      <span className="text-sm font-medium mr-1">Learn more</span>
-                      <ArrowRight size={14} />
-                    </motion.div>
                   </div>
                 </div>
           </div>
