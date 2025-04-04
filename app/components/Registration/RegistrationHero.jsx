@@ -17,7 +17,7 @@ export default function RegistrationHero() {
       {/* Digital circuit background pattern */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <div className="absolute inset-0 bg-[url('/circuit-pattern.svg')] opacity-5 bg-repeat"></div>
-        
+
         {/* Animated grid lines */}
         <div className="absolute inset-0 overflow-hidden opacity-20">
           {[...Array(10)].map((_, i) => (
@@ -27,8 +27,8 @@ export default function RegistrationHero() {
               style={{ top: `${i * 10}%` }}
               animate={{
                 opacity: [0.1, 0.5, 0.1],
-                width: ['0%', '100%', '0%'],
-                left: ['0%', '0%', '100%'],
+                width: ["0%", "100%", "0%"],
+                left: ["0%", "0%", "100%"],
               }}
               transition={{
                 duration: 15 + i * 1.5,
@@ -44,8 +44,8 @@ export default function RegistrationHero() {
               style={{ left: `${i * 10}%` }}
               animate={{
                 opacity: [0.1, 0.3, 0.1],
-                height: ['0%', '100%', '0%'],
-                top: ['0%', '0%', '100%'],
+                height: ["0%", "100%", "0%"],
+                top: ["0%", "0%", "100%"],
               }}
               transition={{
                 duration: 15 + i * 1.5,
@@ -84,14 +84,14 @@ export default function RegistrationHero() {
         />
       ))}
 
-      <motion.section 
+      <motion.section
         className="relative z-10 px-4 md:px-8 flex flex-col items-center justify-center max-w-7xl mx-auto text-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
         {/* Tag */}
-        <motion.div 
+        <motion.div
           className="mb-6 inline-block"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -101,24 +101,29 @@ export default function RegistrationHero() {
             Registration Now Open
           </div>
         </motion.div>
-        
+
         {/* Heading */}
-        <motion.h1 
+        <motion.h1
           className="font-bold text-4xl md:text-6xl leading-tight mb-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ type: "spring", stiffness: 60, damping: 20, delay: 0.3 }}
+          transition={{
+            type: "spring",
+            stiffness: 60,
+            damping: 20,
+            delay: 0.3,
+          }}
         >
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-[#2E8B57]">
-            Register for 
+            Register for
           </span>
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF6B00] to-[#2E8B57]">
             {" FOC'25"}
           </span>
         </motion.h1>
-        
+
         {/* Description */}
-        <motion.p 
+        <motion.p
           className="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-8"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -126,10 +131,10 @@ export default function RegistrationHero() {
         >
           Join us for the premier education technology event in Nigeria
         </motion.p>
-        
+
         {/* Event information */}
-        <motion.div 
-          className="flex flex-col md:flex-row gap-6 justify-center items-center mb-12"
+        <motion.div
+          className="flex flex-col gap-6 justify-center items-center mb-12 max-w-lg"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.7 }}
@@ -138,44 +143,32 @@ export default function RegistrationHero() {
             <Calendar className="text-[#FF6B00] h-5 w-5" />
             <span className="text-white font-medium">June 12, 2025</span>
           </div>
-          
+
           <div className="flex items-center gap-2 bg-white/5 backdrop-blur-md px-5 py-3 rounded-full border border-[#FF6B00]/20">
             <MapPin className="text-[#2E8B57] h-5 w-5" />
-            <span className="text-white font-medium">Unilag, Lagos State</span>
+            <span className="text-white font-medium">
+              Tayo Aderinokun auditorium, University of Lagos, University Road
+              Lagos Mainland Alina, Yaba, Lagos
+            </span>
           </div>
         </motion.div>
-        
+
         {/* Divider */}
-        <motion.div 
+        <motion.div
           className="h-0.5 w-20 bg-gradient-to-r from-[#2E8B57] to-[#FF6B00] rounded-full mx-auto mb-12"
           initial={{ width: 0, opacity: 0 }}
           animate={{ width: 80, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.9 }}
         />
-        
-        {/* Quick info */}
-        <motion.div
-          className="bg-gray-800/40 backdrop-blur-md border border-white/10 rounded-xl p-6 max-w-lg mx-auto"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 1.1 }}
-          whileHover={{ boxShadow: "0 0 30px rgba(46, 139, 87, 0.2)" }}
-        >
-          <p className="text-gray-200 mb-4">
-            Register today to secure your spot at Festival of Change 2025. 
-            Early bird registration closes May 20, 2025.
-          </p>
-          <div className="flex items-center justify-center gap-3">
-            <div className="w-2 h-2 rounded-full bg-[#2E8B57]"></div>
-            <p className="text-white">Limited seats available</p>
-            <div className="w-2 h-2 rounded-full bg-[#FF6B00]"></div>
-          </div>
-        </motion.div>
       </motion.section>
-      
+
       {/* Bottom wave decoration */}
       <div className="absolute bottom-0 left-0 w-full overflow-hidden z-10">
-        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-full h-20">
+        <svg
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+          className="relative block w-full h-20"
+        >
           <path
             d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V59.43C59.71,59.43,141.53,69.23,321.39,56.44Z"
             fill="#111827"
@@ -185,4 +178,4 @@ export default function RegistrationHero() {
       </div>
     </div>
   );
-} 
+}

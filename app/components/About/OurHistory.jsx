@@ -120,7 +120,7 @@ export default function OurHistory() {
           viewport={{ once: true }}
         >
           {/* Center line - hidden on mobile, visible on larger screens */}
-          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-px bg-gradient-to-b from-[#2E8B57] to-[#FF6B00]"></div>
+          <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-px bg-gradient-to-b from-[#2E8B57] via-[#FF6B00] to-transparent"></div>
           
           {timelineEvents.map((event, index) => (
             <motion.div 

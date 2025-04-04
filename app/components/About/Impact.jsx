@@ -28,20 +28,20 @@ const AnimatedCounter = ({ value, duration = 2, delay = 0 }) => {
 export default function Impact() {
     const impact = [
         {
-            title: "1,000+",
+            title: "1,500+",
             description: "Attendees"
         },
         {
-            title: "50+",
+            title: "12+",
             description: "Speakers"
         },
         {
-            title: "25+",
-            description: "Workshops"
+            title: "3+",
+            description: "Competitions"
         },
         {
-            title: "15+",
-            description: "Countries"
+            title: "4+",
+            description: "Engagements"
         }
     ];
 

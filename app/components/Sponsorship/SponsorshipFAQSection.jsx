@@ -10,19 +10,15 @@ export default function SponsorshipFAQSection() {
   const faqs =  [
     {
       question: "What is the expected attendance?",
-      answer: "We anticipate over 1,000 attendees from across Nigeria and neighboring countries, including educators, technology professionals, policymakers, investors, and students."
+      answer: "We anticipate over 1,500+ attendees from across Nigeria and neighboring countries, including educators, technology professionals, policymakers, investors, and students."
     },
     {
       question: "When is the sponsorship deadline?",
-      answer: "To ensure maximum exposure, we recommend confirming sponsorship by March 31, 2025. However, we may accept sponsors after this date based on availability."
+      answer: "To ensure maximum exposure, we recommend confirming sponsorship by June 5th, 2025. However, we may accept sponsors after this date based on availability."
     },
     {
       question: "Can we customize a sponsorship package?",
       answer: "Yes! We're happy to work with you to create a custom package that meets your specific marketing objectives and budget. Contact our sponsorship team to discuss options."
-    },
-    {
-      question: "What is the booth setup and teardown schedule?",
-      answer: "Setup will be available the day before the event (June 11) from 2:00 PM to 8:00 PM, and on the morning of the event from 6:00 AM to 8:00 AM. Teardown must be completed by 8:00 PM on June 12."
     }
   ];
 

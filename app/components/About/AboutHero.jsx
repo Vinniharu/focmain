@@ -30,7 +30,7 @@ export default function AboutHero() {
                 left: ['0%', '0%', '100%'],
               }}
               transition={{
-                duration: 15 + Math.random() * 10,
+                duration: 15 + (i % 5) * 2,
                 repeat: Infinity,
                 delay: i * 0.8,
               }}
@@ -47,7 +47,7 @@ export default function AboutHero() {
                 top: ['0%', '0%', '100%'],
               }}
               transition={{
-                duration: 15 + Math.random() * 10,
+                duration: 15 + (i % 5) * 2,
                 repeat: Infinity,
                 delay: i * 0.5,
               }}
@@ -64,8 +64,8 @@ export default function AboutHero() {
           style={{
             width: `${80 + (i * 40)}px`,
             height: `${80 + (i * 40)}px`,
-            top: `${20 + Math.random() * 60}%`,
-            left: `${Math.random() * 80}%`,
+            top: `${20 + (i * 10)}%`,
+            left: `${10 + (i * 12)}%`,
             zIndex: 1,
           }}
           animate={{

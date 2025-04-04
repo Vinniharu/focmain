@@ -7,7 +7,7 @@ export default function SpecialSponsorshipSection() {
   const specialOpportunities = [
     {
       id: "tech",
-      title: "Technology Partner",
+      title: "Technology Partner", 
       icon: <Laptop className="w-8 h-8" />,
       color: "from-blue-500 to-indigo-600",
       description: "Provide technology solutions for the event site.",
@@ -21,7 +21,7 @@ export default function SpecialSponsorshipSection() {
       id: "lunch",
       title: "Lunch Sponsor",
       icon: <Utensils className="w-8 h-8" />,
-      color: "from-green-500 to-emerald-600",
+      color: "from-green-500 to-emerald-600", 
       description: "Exclusive brand for all attendees on the event day.",
       benefits: [
         "Exclusive brand for all attendees on the event day",
@@ -49,6 +49,18 @@ export default function SpecialSponsorshipSection() {
       benefits: [
         "Fund attendance for underrepresented students",
         "Recognition as sponsor, branded during scholarship announcements"
+      ]
+    },
+    {
+      id: "internship",
+      title: "Internship Sponsor",
+      icon: <GraduationCap className="w-8 h-8" />,
+      color: "from-pink-500 to-rose-600",
+      description: "Provide internship opportunities for talented students.",
+      benefits: [
+        "Access to a pool of talented students",
+        "Recognition as internship partner",
+        "Brand visibility during career-focused sessions"
       ]
     }
   ];

@@ -73,13 +73,17 @@ export default function Footer() {
   ];
 
   const contactUs = [
-    // {
-    //   icon: <MapPin size={18} />,
-    //   text: "11 Admiralty Lake Drive, Ikoyi, Lagos, Nigeria",
-    // },
+    {
+      icon: <MapPin size={18} />,
+      text: "11, Ademola Saka Close, Peace estate, Ajao Estate, Lagos, Nigeria",
+    },
     {
       icon: <Phone size={18} />,
-      text: "+234 800 123 4567",
+      text: "+234 808 525 5769",
+    },
+    {
+      icon: <Phone size={18} />,
+      text: "+234 701 887 8343",
     },
     {
       icon: <Mail size={18} />,
@@ -309,7 +313,7 @@ export default function Footer() {
                   >
                     <div className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center mr-3 group-hover:bg-gradient-to-r from-[#2E8B57]/30 to-[#FF6B00]/30 group-hover:border-white/30 transition-all duration-300">
                       <motion.span
-                        className="text-[#FF6B00]"
+                        className="text-[#FF6B00] w-8 h-8 flex items-center justify-center"
                         whileHover={{ rotate: 15, scale: 1.1 }}
                       >
                         {contact.icon}

@@ -124,7 +124,7 @@ export default function CallToActionSection() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.7, delay: 0.2 }}
               >
-                <Link href="/become-speaker">
+                <Link href="/register ">
                   <motion.button 
                     className="px-6 py-3 bg-gradient-to-r from-[#2E8B57] to-[#FF6B00] rounded-full text-white font-medium flex items-center shadow-lg hover:shadow-xl transition-all duration-300"
                     whileHover={{ 
@@ -134,7 +134,7 @@ export default function CallToActionSection() {
                     whileTap={{ scale: 0.95 }}
                   >
                     <Mic size={18} className="mr-2" />
-                    Become a Speaker
+                    Register Here
                     <motion.span 
                       className="ml-1"
                       initial={{ x: 0 }}
@@ -146,7 +146,7 @@ export default function CallToActionSection() {
                   </motion.button>
                 </Link>
                 
-                <Link href="/contact">
+                <Link href="mailto:info@festivalofchange.org">
                   <motion.button 
                     className="px-6 py-3 bg-gray-800 hover:bg-gray-700 rounded-full text-white font-medium flex items-center border border-gray-700 shadow-md hover:shadow-lg transition-all duration-300"
                     whileHover={{ scale: 1.05 }}
@@ -166,8 +166,8 @@ export default function CallToActionSection() {
                 transition={{ duration: 0.5, delay: 0.4 }}
               >
                 <div className="text-sm text-gray-400 mb-1">Contact Information</div>
-                <p className="text-gray-300 mb-1">11 Admiralty Lane Drive, Ikoyi, Lagos, Nigeria</p>
-                <p className="text-gray-300 mb-1">+234 800 123 4567</p>
+                <p className="text-gray-300 mb-1">11, Ademola Saka Close, Peace estate, Ajao Estate, Lagos, Nigeria</p>
+                <p className="text-gray-300 mb-1">+234 808 525 5769</p>
                 <p className="text-[#2E8B57] hover:text-[#FF6B00] transition-colors duration-300">
                   <a href="mailto:info@festivalofchange.org">info@festivalofchange.org</a>
                 </p>

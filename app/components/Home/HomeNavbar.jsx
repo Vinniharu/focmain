@@ -12,6 +12,7 @@ export default function HomeNavbar() {
     { title: "Home", id: "hero" },
     { title: "About", id: "about" },
     { title: "Speakers", id: "speakers" },
+    { title: "Volunteer", id: "volunteer" },
     { title: "Sponsors", id: "sponsors" },
     { title: "Join", id: "join" },
   ];

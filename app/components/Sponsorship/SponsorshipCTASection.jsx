@@ -117,7 +117,7 @@ export default function SponsorshipCTASection() {
                     <Clock className="w-6 h-6 text-[#FF6B00] mr-4 flex-shrink-0 mt-1" />
                     <div>
                       <h4 className="font-semibold text-white">Sponsorship Deadline</h4>
-                      <p className="text-gray-300">May 20, 2025 (for full benefits)</p>
+                      <p className="text-gray-300">June 5, 2025 (for full benefits)</p>
                     </div>
                   </li>
                   
@@ -137,7 +137,7 @@ export default function SponsorshipCTASection() {
                     <Phone className="w-6 h-6 text-[#FF6B00] mr-4 flex-shrink-0 mt-1" />
                     <div>
                       <h4 className="font-semibold text-white">Sponsorship Hotline</h4>
-                      <p className="text-gray-300">+234 (800) 123 4567</p>
+                      <p className="text-gray-300">+234 (701) 887 8343</p>
                     </div>
                   </li>
                 </ul>

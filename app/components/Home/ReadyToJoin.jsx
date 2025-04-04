@@ -160,7 +160,7 @@ export default function ReadyToJoin() {
                   <Users size={18} />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-gray-800">3,000+ Attendees</h3>
+                  <h3 className="font-semibold text-gray-800">1,500+ Attendees</h3>
                   <p className="text-gray-500 text-sm">Network with leaders and innovators in education</p>
                 </div>
               </div>
@@ -222,19 +222,27 @@ export default function ReadyToJoin() {
                   <ul className="space-y-4 mb-6">
                     <li className="flex items-start">
                       <div className="mr-3 mt-1 text-[#2E8B57]">•</div>
-                      <p className="text-gray-600">50+ keynote sessions and workshops</p>
+                      <p className="text-gray-600">3 keynotes</p>
                     </li>
                     <li className="flex items-start">
                       <div className="mr-3 mt-1 text-[#FF6B00]">•</div>
-                      <p className="text-gray-600">Innovation showcase with cutting-edge EdTech</p>
+                      <p className="text-gray-600">3 panels</p>
                     </li>
                     <li className="flex items-start">
                       <div className="mr-3 mt-1 text-[#2E8B57]">•</div>
-                      <p className="text-gray-600">Networking opportunities with industry leaders</p>
+                      <p className="text-gray-600">Innovative showcase</p>
                     </li>
                     <li className="flex items-start">
                       <div className="mr-3 mt-1 text-[#FF6B00]">•</div>
-                      <p className="text-gray-600">Hands-on demonstrations and interactive exhibits</p>
+                      <p className="text-gray-600">Networking and mentorship opportunities</p>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="mr-3 mt-1 text-[#2E8B57]">•</div>
+                      <p className="text-gray-600">Live art exhibition</p>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="mr-3 mt-1 text-[#FF6B00]">•</div>
+                      <p className="text-gray-600">Pitch competitions</p>
                     </li>
                   </ul>
                   

@@ -207,7 +207,7 @@ export default function Sponsors() {
                   {tier.icon}
                 </div>
                 <h3 className="text-xl md:text-2xl font-bold text-gray-800">{tier.title}</h3>
-                <span className="ml-3 text-sm text-gray-500">({tier.maxSpots} spots available)</span>
+                <span className="ml-3 text-sm text-gray-500">Book A Slot</span>
               </div>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
@@ -227,7 +227,7 @@ export default function Sponsors() {
                       <div className="relative w-24 h-24 flex flex-col items-center justify-center text-center">
                         <Plus size={24} className={`text-${tier.color.toLowerCase()}/50 mb-2`} />
                         <div className={`text-gray-400 font-medium text-sm mb-1`}>Sponsor Spot</div>
-                        <div className="text-xs text-gray-400">{i + 1} of {tier.maxSpots}</div>
+                        <div className="text-xs text-gray-400">Book A Slot</div>
                       </div>
                     </div>
                   </motion.div>

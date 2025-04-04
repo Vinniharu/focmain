@@ -7,6 +7,7 @@ import Sponsors from "./components/Home/Sponsors";
 import { motion } from "framer-motion";
 import ReadyToJoin from "./components/Home/ReadyToJoin";
 import HomeNavbar from "./components/Home/HomeNavbar";
+import VolunteerCTA from "./components/Home/VolunteerCTA";
 
 export default function Home() {
   return (
@@ -27,6 +28,10 @@ export default function Home() {
         
         <div id="speakers">
           <Speakers/>
+        </div>
+        
+        <div id="volunteer">
+          <VolunteerCTA/>
         </div>
         
         <div id="sponsors">
