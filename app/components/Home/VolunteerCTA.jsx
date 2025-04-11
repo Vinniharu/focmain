@@ -326,7 +326,7 @@ export default function VolunteerCTA() {
                 </div>
               </div>
               
-              <Link href="https://forms.gle/8h7HWbJbPTDCX45k8" className="block">
+              <Link href="https://forms.gle/8h7HWbJbPTDCX45k8" target="_blank" className="block">
                 <motion.button 
                   className="w-full px-6 py-4 rounded-xl bg-gradient-to-r from-[#2E8B57] to-[#FF6B00] text-white font-medium shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center space-x-2"
                   whileHover={{ scale: 1.02, boxShadow: "0 10px 25px rgba(46,139,87,0.3)" }}
