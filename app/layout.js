@@ -1,10 +1,11 @@
-import { Inter } from "next/font/google";
+import { Quicksand } from "next/font/google";
 import "./globals.css";
 import Navbar from "./UI/Navbar";
 import Footer from "./UI/Footer";
 
-const inter = Inter({
-  variable: "--font-inter",
+const quicksand = Quicksand({
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-quicksand",
   subsets: ["latin"],
 });
 
@@ -17,7 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} antialiased`}
+        className={`${quicksand.variable}`}
       >
         <Navbar/>
         {children}

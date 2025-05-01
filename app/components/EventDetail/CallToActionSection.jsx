@@ -124,7 +124,7 @@ export default function CallToActionSection() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.7, delay: 0.2 }}
               >
-                <Link href="/register ">
+                <a href="https://forms.gle/uttNB3apffYmGop98" target="_blank">
                   <motion.button 
                     className="px-6 py-3 bg-gradient-to-r from-[#2E8B57] to-[#FF6B00] rounded-full text-white font-medium flex items-center shadow-lg hover:shadow-xl transition-all duration-300"
                     whileHover={{ 
@@ -144,7 +144,7 @@ export default function CallToActionSection() {
                       <ArrowRight size={16} />
                     </motion.span>
                   </motion.button>
-                </Link>
+                </a>
                 
                 <Link href="mailto:info@festivalofchange.org">
                   <motion.button 

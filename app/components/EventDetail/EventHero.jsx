@@ -187,13 +187,15 @@ export default function EventHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            <motion.button
+            <motion.a
+              href="https://forms.gle/uttNB3apffYmGop98"
+              target="_blank"
               className="px-8 py-4 rounded-full bg-gradient-to-r from-[#2E8B57] to-[#FF6B00] text-white font-medium shadow-lg hover:shadow-xl transition-all duration-300"
               whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(46,139,87,0.3)" }}
               whileTap={{ scale: 0.95 }}
             >
               Register Now
-            </motion.button>
+            </motion.a>
           </motion.div>
         </div>
       </div>

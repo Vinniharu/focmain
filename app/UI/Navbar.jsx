@@ -181,13 +181,14 @@ export default function Navbar() {
                       transition={{ duration: 0.2, delay: 0.25 }}
                       className="pt-2 mt-2 border-t border-gray-800"
                     >
-                      <Link 
-                        href="/register" 
+                      <a 
+                        href="https://forms.gle/uttNB3apffYmGop98" 
+                        target="_blank"
                         className="flex items-center justify-center w-full py-2.5 bg-gradient-to-r from-[#2E8B57] to-[#FF6B00] text-white font-medium rounded-md shadow-md hover:shadow-lg transition-shadow duration-300"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         Register
-                      </Link>
+                      </a>
                     </motion.div>
                   </nav>
                 </div>
@@ -237,8 +238,9 @@ export default function Navbar() {
               <motion.div 
                 className="absolute -inset-0.5 bg-gradient-to-r from-[#2E8B57] to-[#FF6B00] rounded-full blur opacity-0 group-hover:opacity-70 transition-all duration-500"
               />
-              <Link 
-                href="/register" 
+              <a 
+                href="https://forms.gle/uttNB3apffYmGop98" 
+                target="_blank"
                 className="relative flex items-center justify-center text-white bg-gradient-to-r from-[#2E8B57] to-[#FF6B00] px-6 py-2.5 rounded-full font-medium shadow-md"
               >
                 <motion.span
@@ -249,7 +251,7 @@ export default function Navbar() {
                   Register
                 </motion.span>
                 <div className="absolute inset-0 rounded-full bg-white/10" />
-              </Link>
+              </a>
             </motion.div>
           </motion.section>
         </nav>

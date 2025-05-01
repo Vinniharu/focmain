@@ -421,7 +421,7 @@ export default function Speakers() {
 
         {/* Current Speakers Section */}
         <motion.div 
-          className="mb-24 relative"
+          className="mb-24 relative hidden"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -761,7 +761,7 @@ export default function Speakers() {
                           alt={speaker.name}
                           layout="fill"
                           objectFit="cover"
-                          className="group-hover:scale-110 transition-transform duration-700"
+                          className="group-hover:scale-110 transition-transform duration-700 object-top"
                         />
                       </div>
                     </div>

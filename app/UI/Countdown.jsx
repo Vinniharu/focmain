@@ -80,14 +80,10 @@ export default function Countdown() {
     }
   };
 
-  const numberVariants = {
-    initial: { scale: 1 },
-    animate: { scale: [1, 1.1, 1], transition: { duration: 0.3 } }
-  };
 
   return (
     <motion.div 
-      className="flex flex-wrap justify-center gap-4 md:gap-8 text-black"
+      className="flex flex-wrap justify-start gap-4 md:gap-8 text-black"
       variants={containerVariants}
       initial="hidden"
       animate="visible"

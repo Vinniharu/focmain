@@ -65,11 +65,7 @@ export default function Footer() {
     {
       link: "/sponsors",
       text: "Sponsorship",
-    },
-    {
-      link: "/register",
-      text: "Register",
-    },
+    }
   ];
 
   const contactUs = [
@@ -286,6 +282,19 @@ export default function Footer() {
                     </motion.a>
                   </motion.li>
                 ))}
+                <motion.li
+                    variants={itemVariants}
+                  >
+                    <motion.a
+                      href="https://forms.gle/uttNB3apffYmGop98"
+                      target="_blank"
+                      className="text-white/60 hover:text-white flex items-center group transition-colors duration-300"
+                      whileHover={{ x: 5 }}
+                    >
+                      <ChevronRight size={16} className="mr-2 text-[#FF6B00] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      Register
+                    </motion.a>
+                  </motion.li>
               </motion.ul>
             </motion.div>
             

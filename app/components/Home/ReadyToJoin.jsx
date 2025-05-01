@@ -173,7 +173,7 @@ export default function ReadyToJoin() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              <Link href="/register">
+              <a href="https://forms.gle/uttNB3apffYmGop98" target="_blank">
                 <motion.button 
                   className="px-6 py-3 rounded-full bg-gradient-to-r from-[#2E8B57] to-[#FF6B00] text-white font-medium shadow-md hover:shadow-lg transition-all duration-300"
                   whileHover={{ scale: 1.05, boxShadow: "0 10px 25px rgba(46,139,87,0.3)" }}
@@ -181,7 +181,7 @@ export default function ReadyToJoin() {
                 >
                   Register Now
                 </motion.button>
-              </Link>
+              </a>
               
               <Link href="/sponsorship">
                 <motion.button 
