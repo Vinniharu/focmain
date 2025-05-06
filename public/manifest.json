@@ -1,0 +1,23 @@
+{
+  "name": "Festival Of Change",
+  "short_name": "FOC",
+  "description": "Join the Festival Of Change - bringing together speakers, volunteers, and sponsors to create positive community impact.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4a8aff",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+} 

@@ -18,29 +18,31 @@ export default function Home() {
     >
         <HomeNavbar />
         
-        <div id="hero">
-          <HomeHero/>
-        </div>
-        
-        <div id="about">
-          <AboutSection/>
-        </div>
-        
-        <div id="speakers">
-          <Speakers/>
-        </div>
-        
-        <div id="volunteer">
-          <VolunteerCTA/>
-        </div>
-        
-        <div id="sponsors">
-          <Sponsors/>
-        </div>
-        
-        <div id="join">
-          <ReadyToJoin/>
-        </div>
+        <main>
+          <section id="hero" aria-label="Festival of Change hero section">
+            <HomeHero/>
+          </section>
+          
+          <section id="about" aria-label="About the Festival">
+            <AboutSection/>
+          </section>
+          
+          <section id="speakers" aria-label="Event speakers">
+            <Speakers/>
+          </section>
+          
+          <section id="volunteer" aria-label="Volunteer opportunities">
+            <VolunteerCTA/>
+          </section>
+          
+          <section id="sponsors" aria-label="Event sponsors">
+            <Sponsors/>
+          </section>
+          
+          <section id="join" aria-label="Registration call to action">
+            <ReadyToJoin/>
+          </section>
+        </main>
     </motion.div>
   );
 }
