@@ -7,6 +7,7 @@ import RegistrationInfo from "../components/Registration/RegistrationInfo";
 
 export default function RegistrationPage() {
   useEffect(() => {
+    // Redirect to the Google Form for registration
     window.location.href = "https://forms.gle/uttNB3apffYmGop98";
   }, []);
 
