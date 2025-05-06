@@ -1,11 +1,15 @@
 "use client";
 
-import { Suspense } from "react";
+import { Suspense, useEffect } from "react";
 import RegistrationHero from "../components/Registration/RegistrationHero";
 import RegistrationForm from "../components/Registration/RegistrationForm";
 import RegistrationInfo from "../components/Registration/RegistrationInfo";
 
 export default function RegistrationPage() {
+  useEffect(() => {
+    window.location.href = "https://forms.gle/uttNB3apffYmGop98";
+  }, []);
+
   return (
     <main className="min-h-screen bg-gray-900">
       <Suspense fallback={<div className="min-h-screen flex items-center justify-center text-white">Loading hero section...</div>}>
