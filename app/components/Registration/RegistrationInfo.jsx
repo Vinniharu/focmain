@@ -73,7 +73,7 @@ export default function RegistrationInfo() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.5 }}
             >
-              Join us for the Festival of Change 2025, Nigeria's premier education and technology 
+              Join us for the Festival of Change 2025, Nigeria's Global education and technology 
               event. Connect with industry leaders, innovators, and change-makers in education.
             </motion.p>
           </div>
@@ -205,7 +205,7 @@ export default function RegistrationInfo() {
               >
                 <h3 className="text-xl font-semibold text-white mb-3">Limited Capacity</h3>
                 <p className="text-gray-300">
-                  While the event is free, space is limited. Register early to secure your spot at this premier education and technology event.
+                  While the event is free, space is limited. Register early to secure your spot at this Global education and technology event.
                 </p>
               </motion.div>
               

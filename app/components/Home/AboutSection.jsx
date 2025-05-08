@@ -239,7 +239,7 @@ export default function AboutSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-        The Festival of Change is a premier event that brings together
+        The Festival of Change is a Global event that brings together
         educators, technologists, policymakers, and innovators to explore the
         intersection of education and technology.
           </motion.p>

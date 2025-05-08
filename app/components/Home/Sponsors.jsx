@@ -207,7 +207,14 @@ export default function Sponsors() {
                   {tier.icon}
                 </div>
                 <h3 className="text-xl md:text-2xl font-bold text-gray-800">{tier.title}</h3>
-                <span className="ml-3 text-sm text-gray-500">Book A Slot</span>
+                <a 
+                  href="https://paystack.shop/festival-of-change" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="ml-3 text-sm text-gray-500 hover:text-[#2E8B57] transition-colors"
+                >
+                  Book A Slot
+                </a>
               </div>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
@@ -222,14 +229,19 @@ export default function Sponsors() {
                       borderLeft: "1px solid rgba(255,255,255,0.7)",
                     }}
                   >
-                    <div className="w-full h-full flex items-center justify-center">
+                    <a 
+                      href="https://paystack.shop/festival-of-change" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="w-full h-full flex items-center justify-center"
+                    >
                       {/* Placeholder for sponsor */}
                       <div className="relative w-24 h-24 flex flex-col items-center justify-center text-center">
                         <Plus size={24} className={`text-${tier.color.toLowerCase()}/50 mb-2`} />
                         <div className={`text-gray-400 font-medium text-sm mb-1`}>Sponsor Spot</div>
                         <div className="text-xs text-gray-400">Book A Slot</div>
                       </div>
-                    </div>
+                    </a>
                   </motion.div>
                 ))}
               </div>
@@ -244,7 +256,9 @@ export default function Sponsors() {
           transition={{ duration: 0.6, delay: 0.8 }}
         >
           <motion.a 
-            href="/sponsorship" 
+            href="https://paystack.shop/festival-of-change" 
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-white shadow-md hover:shadow-lg transition-all duration-300 group border border-gray-200"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
