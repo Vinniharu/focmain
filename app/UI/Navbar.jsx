@@ -64,6 +64,10 @@ export default function Navbar() {
       label: "Sponsorship",
       href: "/sponsorship",
     },
+    {
+      label: "Hackathon",
+      href: "/hackathon",
+    },
   ];
 
   return (
