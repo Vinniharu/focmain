@@ -17,10 +17,10 @@ export default function StructuredData() {
         "addressCountry": "Nigeria"
       }
     },
-    "image": "https://festivalofchange.org/og-image.png",
+    "image": "https://www.festivalofchange.org/og-image.png",
     "offers": {
       "@type": "Offer",
-      "url": "https://festivalofchange.org/register",
+      "url": "https://www.festivalofchange.org/register",
       "price": "Free",
       "priceCurrency": "NGN",
       "availability": "https://schema.org/InStock",
@@ -29,7 +29,7 @@ export default function StructuredData() {
     "organizer": {
       "@type": "Organization",
       "name": "Festival Of Change Organization",
-      "url": "https://festivalofchange.org"
+      "url": "https://www.festivalofchange.org"
     }
   };
 
