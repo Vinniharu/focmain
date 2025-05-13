@@ -11,6 +11,7 @@ const quicksand = Quicksand({
 });
 
 export const metadata = {
+  metadataBase: new URL('https://www.festivalofchange.org'),
   title: "Festival Of Change | Community Impact Event",
   description: "Join the Festival Of Change - bringing together speakers, volunteers, and sponsors to create positive community impact. Register today for this transformational event.",
   keywords: "festival of change, community event, social impact, speakers, volunteers, sponsors",
@@ -21,7 +22,7 @@ export const metadata = {
     siteName: "Festival Of Change",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://www.festivalofchange.org/og-image.png",
         width: 1200,
         height: 630,
         alt: "Festival Of Change",
@@ -34,7 +35,9 @@ export const metadata = {
     card: "summary_large_image",
     title: "Festival Of Change | Community Impact Event",
     description: "Join the Festival Of Change - bringing together speakers, volunteers, and sponsors to create positive community impact.",
-    images: ["/twitter-image.png"],
+    images: ["https://www.festivalofchange.org/twitter-image.png"],
+    creator: "@festivalofchange",
+    site: "@festivalofchange",
   },
   robots: "index, follow",
   alternates: {
