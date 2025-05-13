@@ -20,7 +20,6 @@ export default function DebateJudges() {
     {
       name: "Oluwapelumi Oresanya",
       position: "Judge",
-      email: "oluwapelumihalimat@gmail.com",
       bio: "A distinguished professional with extensive experience in youth development and educational advancement programs.",
       imageSrc: "/judges/placeholder.jpg",
     },
@@ -121,15 +120,6 @@ export default function DebateJudges() {
                 <p className="text-[#2E8B57] font-medium mb-4">{judge.position}</p>
                 
                 <p className="text-gray-600 mb-4">{judge.bio}</p>
-                
-                {judge.email && (
-                  <a 
-                    href={`mailto:${judge.email}`}
-                    className="text-sm text-[#FF6B00] hover:underline"
-                  >
-                    {judge.email}
-                  </a>
-                )}
               </motion.div>
             ))}
           </div>
