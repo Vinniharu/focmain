@@ -68,6 +68,10 @@ export default function Navbar() {
       label: "Hackathon",
       href: "/hackathon",
     },
+    {
+      label: "Debate",
+      href: "/debate",
+    },
   ];
 
   return (
