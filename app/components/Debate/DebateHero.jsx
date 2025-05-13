@@ -2,10 +2,33 @@
 
 import { motion } from "framer-motion";
 import { Calendar, Clock, MapPin, Users, Award, ArrowRight } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function DebateHero() {
   const [isHovered, setIsHovered] = useState(false);
+  const [windowSize, setWindowSize] = useState({
+    width: 1200,
+    height: 800
+  });
+  
+  useEffect(() => {
+    // This code only runs on the client
+    const handleResize = () => {
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight
+      });
+    };
+    
+    // Set initial size
+    handleResize();
+    
+    // Add event listener
+    window.addEventListener('resize', handleResize);
+    
+    // Clean up
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   
   return (
     <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-950">
@@ -17,20 +40,20 @@ export default function DebateHero() {
             key={index}
             className="absolute w-2 h-2 rounded-full bg-white/10"
             initial={{ 
-              x: Math.random() * window.innerWidth, 
-              y: Math.random() * window.innerHeight,
+              x: Math.random() * windowSize.width, 
+              y: Math.random() * windowSize.height,
               opacity: Math.random() * 0.5 + 0.1
             }}
             animate={{
               x: [
-                Math.random() * window.innerWidth,
-                Math.random() * window.innerWidth,
-                Math.random() * window.innerWidth
+                Math.random() * windowSize.width,
+                Math.random() * windowSize.width,
+                Math.random() * windowSize.width
               ],
               y: [
-                Math.random() * window.innerHeight,
-                Math.random() * window.innerHeight,
-                Math.random() * window.innerHeight
+                Math.random() * windowSize.height,
+                Math.random() * windowSize.height,
+                Math.random() * windowSize.height
               ],
               opacity: [0.1, 0.3, 0.1]
             }}
