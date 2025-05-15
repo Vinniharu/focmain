@@ -70,6 +70,11 @@ export default function Speakers() {
       description: "Keynote speaker/Panelist",
     },
     {
+      name: "Omolola Lipede",
+      image: "/images/lipede.jpg",
+      description: "Judge",
+    },
+    {
       name: "Oluwatomiwa Olusesi",
       image: "/images/olusesi.jpg",
       description: "Judge",
