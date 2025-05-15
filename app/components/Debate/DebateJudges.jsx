@@ -11,12 +11,7 @@ export default function DebateJudges() {
       bio: "An experienced educator and debate coach with expertise in critical thinking and communication skills development.",
       imageSrc: "/judges/placeholder.jpg",
     },
-    {
-      name: "Omolola Lipede",
-      position: "Judge",
-      bio: "A renowned expert in educational technology and innovation with a passion for fostering young talent.",
-      imageSrc: "/judges/placeholder.jpg",
-    },
+
     {
       name: "Oluwapelumi Oresanya",
       position: "Judge",

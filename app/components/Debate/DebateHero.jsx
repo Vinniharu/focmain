@@ -200,7 +200,7 @@ export default function DebateHero() {
                 <InfoCard 
                   icon={<Calendar className="w-6 h-6 text-green-400" />}
                   title="Submission Deadline"
-                  value="May 15, 2025"
+                  value="May 20, 2025"
                   delay={0.4}
                 />
                 
