@@ -105,7 +105,7 @@ export default function DebateRegistration() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-800 mb-1">Meet the Deadline</h4>
-                    <p className="text-gray-600">All applications must be submitted by May 15, 2025.</p>
+                    <p className="text-gray-600">All applications must be submitted by May 20, 2025.</p>
                   </div>
                 </div>
                 

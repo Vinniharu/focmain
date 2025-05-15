@@ -48,7 +48,7 @@ const CountdownTimer = () => {
   });
 
   useEffect(() => {
-    const countdownDate = new Date("2025-05-15T00:00:00").getTime();
+    const countdownDate = new Date("2025-05-25T00:00:00").getTime();
     
     const timer = setInterval(() => {
       const now = new Date().getTime();
