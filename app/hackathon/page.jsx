@@ -48,7 +48,7 @@ const CountdownTimer = () => {
   });
 
   useEffect(() => {
-    const countdownDate = new Date("2025-05-25T00:00:00").getTime();
+    const countdownDate = new Date("2025-06-06T00:00:00").getTime();
     
     const timer = setInterval(() => {
       const now = new Date().getTime();
@@ -207,7 +207,7 @@ const RetroComputer = () => {
                       <span className="mr-2 text-green-600">$</span>
                       <span>
                         <TypewriterEffect 
-                          text="Join us May 25-30, 2025" 
+                          text="Join us June 6-11, 2025" 
                           delay={4000}
                         />
                       </span>
@@ -216,7 +216,7 @@ const RetroComputer = () => {
                       <span className="mr-2 text-green-600">$</span>
                       <span>
                         <TypewriterEffect 
-                          text="Applications close May 15, 2025" 
+                          text="Applications close June 4, 2025" 
                           delay={6000}
                         />
                       </span>
@@ -441,7 +441,7 @@ export default function HackathonPage() {
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
               <div className="inline-block px-3 py-1 bg-fuchsia-700 bg-opacity-70 rounded-full text-sm font-medium mb-4 border border-fuchsia-500">
-                <span className="mr-2">●</span> MAY 25-30, 2025 • VIRTUAL EVENT
+                <span className="mr-2">●</span> JUNE 6-11, 2025 • VIRTUAL EVENT
               </div>
               <h1 className="text-5xl md:text-6xl font-extrabold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-fuchsia-300">
                 Festival of Change 2025
